@@ -1,6 +1,9 @@
 # SymbolRollerSwiftUI
 SymbolRoller 예제 - SwiftUI
 
+![image](https://user-images.githubusercontent.com/89061309/206856066-9e8a368f-b266-4701-a5d1-68213fd0451e.png)
+
+
 
 ## Branch
 
