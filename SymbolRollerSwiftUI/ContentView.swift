@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     let symbols: [String] = ["sun.min", "moon", "cloud", "wind", "snowflake"]
     
+    @State var imageName: String = "moon"
+    
     
     var body: some View {
         VStack {
-            Image(systemName: "sun.min")
+            Image(systemName: imageName)
             
-            Text("sun.min")
+            Text(imageName)
             
             Button {
                 print("button tapped")
