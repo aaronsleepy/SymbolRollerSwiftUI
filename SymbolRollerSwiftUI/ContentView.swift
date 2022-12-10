@@ -27,7 +27,15 @@ struct ContentView: View {
             Button {
                 print("button tapped")
             } label: {
-                Text("Reload")
+                HStack {
+                    Image(systemName: "arrow.3.trianglepath")
+                    
+                    VStack {
+                        Text("Reload")
+                        
+                        Text("Reload desc")
+                    }
+                }
             }
             .frame(maxWidth: .infinity, minHeight: 80)
             .background(.pink)
