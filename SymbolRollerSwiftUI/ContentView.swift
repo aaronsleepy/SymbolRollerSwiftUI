@@ -15,11 +15,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Spacer(minLength: 30)
+            
             Image(systemName: imageName)
                 .renderingMode(.template)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .padding()
+            
+            Spacer(minLength: 30)
             
             Text(imageName)
                 .font(.system(size: 40, weight: .bold, design: .default))
