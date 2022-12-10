@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    let symbols: [String] = ["sun.min", "moon", "cloud", "wind", "snowflake"]
+    
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
