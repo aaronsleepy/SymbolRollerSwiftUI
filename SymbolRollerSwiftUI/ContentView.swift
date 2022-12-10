@@ -16,14 +16,22 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: imageName)
+                .renderingMode(.template)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding()
             
             Text(imageName)
+                .font(.system(size: 40, weight: .bold, design: .default))
             
             Button {
                 print("button tapped")
             } label: {
                 Text("Reload")
             }
+            .frame(maxWidth: .infinity, minHeight: 80)
+            .background(.pink)
+            .cornerRadius(40)
         }
     }
 }
