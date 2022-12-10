@@ -29,11 +29,15 @@ struct ContentView: View {
             } label: {
                 HStack {
                     Image(systemName: "arrow.3.trianglepath")
+                        .foregroundColor(.white)
                     
                     VStack {
                         Text("Reload")
+                            .font(.system(size: 30, weight: .bold, design: .default))
+                            .foregroundColor(.white)
                         
-                        Text("Reload desc")
+                        Text("Click me to reload")
+                            .foregroundColor(.white)
                     }
                 }
             }
