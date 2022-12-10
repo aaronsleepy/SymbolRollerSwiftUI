@@ -26,6 +26,8 @@ struct ContentView: View {
             
             Button {
                 print("button tapped")
+                
+                imageName = symbols.randomElement()!
             } label: {
                 HStack {
                     Image(systemName: "arrow.3.trianglepath")
